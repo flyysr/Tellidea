@@ -3,16 +3,14 @@
     <script src="./jquery-1.11.3.min.js"></script>
 </head>
 <body>
+<div id="content">content:</div>
 <script>
     window.onload = function(){
         $.ajax({
             type: "GET",
             url: "http://112.74.100.71/test.php",
-//            data: {username:$("#username").val(), content:$("#content").val()},
-            dataType: "json",
             success: function(data){
-                document.write(data);
-                console.log(data)
+               $('#content').html(data.data);
             }
         });
     }
