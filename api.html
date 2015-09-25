@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script src="./jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<script>
+    window.onload = function(){
+        $.ajax({
+            type: "GET",
+            url: "112.74.100.71/test.php",
+//            data: {username:$("#username").val(), content:$("#content").val()},
+            dataType: "json",
+            success: function(data){
+                document.write(data);
+                console.log(data)
+            }
+        });
+    }
+</script>
+</body>
+</html>
