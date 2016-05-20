@@ -3,12 +3,13 @@
     <script src="./jquery-1.11.3.min.js"></script>
 </head>
 <body>
+<h1>为什么没变，缓存？？</h1>
 <div id="content">content:</div>
 <script>
     window.onload = function(){
         $.ajax({
             type: "GET",
-            url: "http://112.74.100.71/test.php",
+            url: "http://112.74.100.71:81/test.php",
             success: function(data){
                $('#content').html(data.data);
             }
