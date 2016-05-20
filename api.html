@@ -8,7 +8,7 @@
     window.onload = function(){
         $.ajax({
             type: "GET",
-            url: "http://112.74.100.71/test.php",
+            url: "http://112.74.100.71:81/test.php",
             success: function(data){
                $('#content').html(data.data);
             }
