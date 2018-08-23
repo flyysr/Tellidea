@@ -12,7 +12,9 @@
             //url: "http://112.74.100.71:81/test.php",
             url: "http://120.79.14.84:81/test.php",
             success: function(data){
-               $('#content').html(data.data);
+               //$('#content').html(data.data);
+                console.log(data);
+                $('#content').html(data);
             }
         });
     }
